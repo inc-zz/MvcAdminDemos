@@ -1,0 +1,27 @@
+Redis
+
+
+Mongodb
+
+
+RabbitMQ
+
+
+Aliyun短信
+
+
+Jpush极光推送
+
+
+SqlSugar
+
+
+T4语法高亮
+https://blog.csdn.net/yhyhyhy/article/details/52503743
+visual Studio 扩展和更新 => Visual T4 
+
+2模板输出
+https://www.cnblogs.com/dyc-zlj/p/9526190.html
+
+3Autofac IOC 依赖注入
+http://www.cnblogs.com/WeiGe/p/3871451.html

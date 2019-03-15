@@ -1,0 +1,17 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\Common.Repository.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\Common.Repository.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\Common.MongoRepository.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\SqlSugar.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\MongoDB.Bson.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\MongoDB.Driver.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\Newtonsoft.Json.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\Oracle.ManagedDataAccess.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\System.Data.SQLite.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\MySql.Data.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\Common.MongoRepository.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\SqlSugar.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\MongoDB.Bson.xml
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\bin\Release\MongoDB.Driver.xml
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\obj\Release\Common.Repository.csprojResolveAssemblyReference.cache
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\obj\Release\Common.Repository.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Repository\obj\Release\Common.Repository.pdb

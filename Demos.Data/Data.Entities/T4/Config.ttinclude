@@ -1,0 +1,10 @@
+﻿<#@ assembly name="System.Core" #>
+<#+
+    //配置文件
+    public class config {
+        public static readonly string ConnectionString = "Data Source=.;Initial Catalog=admin_model;User Id=sa;Password=123;";
+        public static readonly string DbDatabase = "admin_model";
+        public static readonly string DbTables = "*";
+    }
+
+ #>

@@ -1,0 +1,6 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\bin\Release\Common.RabbitMQ.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\bin\Release\Common.RabbitMQ.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\bin\Release\RabbitMQ.Client.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\bin\Release\RabbitMQ.Client.xml
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\obj\Release\Common.RabbitMQ.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\obj\Release\Common.RabbitMQ.pdb

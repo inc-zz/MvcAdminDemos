@@ -1,0 +1,4 @@
+C:\workspace\csharp\PQM\Data\PQM.QueryModel\bin\Debug\PQM.QueryModel.dll
+C:\workspace\csharp\PQM\Data\PQM.QueryModel\bin\Debug\PQM.QueryModel.pdb
+C:\workspace\csharp\PQM\Data\PQM.QueryModel\obj\Debug\PQM.QueryModel.dll
+C:\workspace\csharp\PQM\Data\PQM.QueryModel\obj\Debug\PQM.QueryModel.pdb

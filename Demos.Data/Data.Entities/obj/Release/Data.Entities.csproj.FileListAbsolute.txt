@@ -1,0 +1,4 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Release\Demos.Entities.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Release\Demos.Entities.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Release\Demos.Entities.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Release\Demos.Entities.pdb

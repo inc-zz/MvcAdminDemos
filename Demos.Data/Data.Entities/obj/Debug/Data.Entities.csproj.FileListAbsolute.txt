@@ -1,0 +1,7 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Debug\Demos.Entities.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Debug\Demos.Entities.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csprojResolveAssemblyReference.cache
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.pdb

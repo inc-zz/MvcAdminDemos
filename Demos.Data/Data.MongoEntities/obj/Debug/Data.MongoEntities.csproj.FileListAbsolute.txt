@@ -1,0 +1,4 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.MongoEntities\bin\Debug\Data.MongoEntities.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.MongoEntities\bin\Debug\Data.MongoEntities.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.pdb

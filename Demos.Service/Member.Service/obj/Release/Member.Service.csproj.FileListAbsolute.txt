@@ -1,0 +1,5 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Member.Service\bin\Release\Member.Service.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Member.Service\bin\Release\Member.Service.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Member.Service\obj\Release\Member.Service.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Member.Service\obj\Release\Member.Service.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Member.Service\obj\Release\Member.Service.csprojResolveAssemblyReference.cache

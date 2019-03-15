@@ -1,0 +1,4 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.QueryModel\bin\Debug\PQM.QueryModel.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.QueryModel\bin\Debug\PQM.QueryModel.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.QueryModel\obj\Debug\PQM.QueryModel.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.QueryModel\obj\Debug\PQM.QueryModel.pdb

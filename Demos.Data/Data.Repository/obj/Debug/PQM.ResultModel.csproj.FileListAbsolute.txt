@@ -1,0 +1,5 @@
+C:\workspace\csharp\PQM\Data\PQM.ResultModel\obj\Debug\PQM.ResultModel.csprojResolveAssemblyReference.cache
+C:\workspace\csharp\PQM\Data\PQM.ResultModel\bin\Debug\PQM.ResultModel.dll
+C:\workspace\csharp\PQM\Data\PQM.ResultModel\bin\Debug\PQM.ResultModel.pdb
+C:\workspace\csharp\PQM\Data\PQM.ResultModel\obj\Debug\PQM.ResultModel.dll
+C:\workspace\csharp\PQM\Data\PQM.ResultModel\obj\Debug\PQM.ResultModel.pdb

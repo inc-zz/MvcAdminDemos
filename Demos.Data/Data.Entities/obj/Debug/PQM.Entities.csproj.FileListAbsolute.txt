@@ -1,0 +1,5 @@
+C:\workspace\csharp\PQM\Data\PQM.Entities\bin\Debug\PQM.Entities.dll
+C:\workspace\csharp\PQM\Data\PQM.Entities\bin\Debug\PQM.Entities.pdb
+C:\workspace\csharp\PQM\Data\PQM.Entities\obj\Debug\PQM.Entities.csprojResolveAssemblyReference.cache
+C:\workspace\csharp\PQM\Data\PQM.Entities\obj\Debug\PQM.Entities.dll
+C:\workspace\csharp\PQM\Data\PQM.Entities\obj\Debug\PQM.Entities.pdb

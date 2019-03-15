@@ -1,0 +1,9 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin\Release\SqlSugar.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin\Release\SqlSugar.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin\Release\MySql.Data.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin\Release\Newtonsoft.Json.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin\Release\Oracle.ManagedDataAccess.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin\Release\System.Data.SQLite.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\obj\Release\SqlSugar.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\obj\Release\SqlSugar.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\obj\Release\SqlSugar.csprojResolveAssemblyReference.cache

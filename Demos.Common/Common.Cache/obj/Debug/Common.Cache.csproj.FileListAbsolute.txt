@@ -1,0 +1,7 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\obj\Debug\Common.Cache.csprojResolveAssemblyReference.cache
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\bin\Debug\Common.Cache.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\bin\Debug\Common.Cache.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\bin\Debug\StackExchange.Redis.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\bin\Debug\StackExchange.Redis.xml
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\obj\Debug\Common.Cache.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Cache\obj\Debug\Common.Cache.pdb

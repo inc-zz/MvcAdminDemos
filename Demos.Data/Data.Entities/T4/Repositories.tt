@@ -1,0 +1,135 @@
+﻿<#@ template debug = "true" hostspecific ="true" language= "C#"   #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace = "System"#>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension = ".cs" #>
+ 
+<#@ include file="$(SolutionDir)Demos.Data\Data.Entities\T4\EntityOutputHelper.ttinclude"#> 
+<#@ include file="$(SolutionDir)Demos.Data\Data.Entities\T4\EntityHelper.ttinclude" #>
+<#		
+	    
+
+        var manager = Manager.Create(Host, GenerationEnvironment);
+		string projectPath = Host.ResolveAssemblyReference( "$(SolutionDir)" );
+        List<DbTable> tableList= new TemplateHelper().GetDbTables();
+		string savePath = projectPath+"/Demos.Data/Data.Repository/Repository";
+		foreach(var entity in tableList)
+		{	 
+			List<DbColumn> columns =  new TemplateHelper().GetDbColumns(entity.TableName,entity.SchemaName);
+			var keyModel = columns.FirstOrDefault(x=>x.IsPrimaryKey==true);
+			var entityName = entity.TableName;
+			manager.StartNewFile(savePath+"/"+entityName + "Repository.cs");#>
+//------------------------------------------------------------------------------
+// 警告:
+//     该代码由T4工具根据模板自动生成,直接在该代码上进行任何修改都将在重新生成后丢失!
+//     如有需要应使用partial class或是继承该类进行自定义扩展。
+//------------------------------------------------------------------------------
+using System;
+using Data.Entities.Models;
+using SqlSugar;
+using System.Collections.Generic;
+using Demos.Entities.ResultModel;
+using Demos.Entities.FilterModel;
+
+namespace Data.Repository.Repository
+{   
+	 public partial class <#=entityName#>Repository : BaseRepository, I<#=entityName#>Repository
+    {
+
+        private SqlSugarClient _db;
+        public <#=entityName#>Repository()
+        {
+            _db = GetInstance();
+        }
+		  /// <summary>
+        /// 获取实体
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+		public <#=entityName#> GetModel(<#=keyModel.ColumnType#> <#=keyModel.ColumnName#>) {
+            return _db.Queryable<<#=entityName#>>().First(x=>x.<#=keyModel.ColumnName#> == <#=keyModel.ColumnName#>);
+
+        }
+        /// <summary>
+        /// 新增
+        /// </summary>
+        /// <param name="model">返回最新实体</param>
+        /// <returns></returns>
+        public <#=entityName#> Insert(<#=entityName#> model)
+        {
+            var _model = _db.Insertable(model).ExecuteReturnEntity();
+            return _model;
+        }
+        /// <summary>
+        /// 更新返回最新实体
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public <#=entityName#> Update(<#=entityName#> entity)
+        {
+            var _entity = entity;
+            var _num = _db.Updateable(entity).ExecuteCommand();
+            if (_num > 0)
+                _entity = _db.Queryable<<#=entityName#>>().Where(x => x.MenuId == entity.MenuId).First();
+            return _entity;
+        }
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public bool Delete(<#=entityName#> model)
+        {
+            var _res = _db.Deleteable<<#=entityName#>>().Where(x => x.MenuId == model.MenuId).ExecuteCommand();
+            return _res > 0;
+        }
+
+        /// <summary>
+        /// 分页查询
+        /// </summary>
+        /// <param name="paging"></param>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        public PagedResult<<#=entityName#>> Pager<#=entityName#>List(PagingInfo paging, string where)
+        {
+			var result = new PagedResult<<#=entityName#>>();
+            int total = 0;
+            result.Data = _db.Queryable<<#=entityName#>>().OrderBy(x => x.<#=keyModel.ColumnName#>).ToPageList(paging.PageIndex, paging.PageSize, ref total);
+            result.PageIndex = paging.PageIndex;
+            result.PageSize = paging.PageSize;
+            result.TotalPages = total;
+            return result;
+
+        }
+        /// <summary>
+        /// 批量插入
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public bool BatchInsert(List<<#=entityName#>> list)
+        {
+            var res = _db.Insertable(list.ToArray()).ExecuteCommand();
+            return res > 0;
+        }
+
+        /// <summary>
+        /// 批量更新
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public bool BatchUpdate(List<<#=entityName#>> list)
+        {
+            var res = _db.Updateable(list.ToArray()).ExecuteCommand();
+            return res > 0;
+        }
+    }
+}
+	
+<#
+		manager.EndBlock();    
+         }            
+       manager.Process(true);  
+#>
+

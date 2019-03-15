@@ -1,0 +1,17 @@
+C:\workspace\csharp\PQM\Service\PQM.Service\obj\Debug\PQM.Service.csprojResolveAssemblyReference.cache
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.Service.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.Service.pdb
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\Core.EnumType.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\Newtonsoft.Json.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.Common.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.QueryModel.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.ResultModel.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\SqlSugar.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\Common.Tools.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.Common.pdb
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\Core.EnumType.pdb
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.QueryModel.pdb
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\PQM.ResultModel.pdb
+C:\workspace\csharp\PQM\Service\PQM.Service\bin\Debug\Common.Tools.pdb
+C:\workspace\csharp\PQM\Service\PQM.Service\obj\Debug\PQM.Service.dll
+C:\workspace\csharp\PQM\Service\PQM.Service\obj\Debug\PQM.Service.pdb
