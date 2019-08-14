@@ -5,3 +5,10 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Deb
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csprojResolveAssemblyReference.cache
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Demos.Entities.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Demos.Entities.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.pdb

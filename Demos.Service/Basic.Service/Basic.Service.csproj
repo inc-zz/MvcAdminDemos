@@ -7,10 +7,11 @@
     <ProjectGuid>{FEC68F8A-05F6-419F-B838-A8DCCBBD6B88}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PQM.Service</RootNamespace>
-    <AssemblyName>PQM.Service</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>Basic.Service</RootNamespace>
+    <AssemblyName>Basic.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,7 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseService.cs" />
+    <Compile Include="IETPSAPTIHEADINPUTService.cs" />
+    <Compile Include="IPubCodesService.cs" />
+    <Compile Include="ITRANSAPPLYHEADINPUTService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TRANSAPPLYHEADINPUTService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Demos.Core\Core.EnumType\Core.EnumType.csproj">
@@ -58,6 +63,10 @@
     <ProjectReference Include="..\..\Demos.Data\Data.Entities\Data.Entities.csproj">
       <Project>{81330315-db73-440d-ab78-a2fbd56e1052}</Project>
       <Name>Data.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Demos.Data\Data.Repository\Data.Repository.csproj">
+      <Project>{AD635690-F5F4-47BF-9402-E68601E03F6D}</Project>
+      <Name>Data.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -61,7 +61,7 @@ namespace Data.Entities.Models
             <#}} #>
         }
  
-<# foreach( var column in columns){#>
+<# foreach( var column in columns){#> 
 	/// <summary>
 	///  <#=column.Remark.Replace("\r\n","\n ///") #>
 	/// </summary>
@@ -71,7 +71,7 @@ namespace Data.Entities.Models
  
 			<#} else { #>
     <# if(!column.IsNullable){ #>
-	[Required(ErrorMessage="<#=column.ColumnName #>不能为空")]
+	[Required(ErrorMessage="<#=column.Remark.Replace("\r\n","\n ///")#>不能为空")]
 	<# } #>
 	public <#=column.ColumnType.ToString().Replace( "System." ,"" ) #> <#=column.ColumnName #> { set; get; }
  

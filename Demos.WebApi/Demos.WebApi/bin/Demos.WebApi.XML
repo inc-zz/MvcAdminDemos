@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Demos.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Demos.WebApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Demos.WebApi.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:Demos.WebApi.Controllers.BaseController">
+            <summary>
+            webApi基础控制器
+            </summary>
+        </member>
+        <member name="T:Demos.WebApi.Controllers.AccountController">
+            <summary>
+            用户中心
+            </summary>
+        </member>
+        <member name="M:Demos.WebApi.Controllers.AccountController.#ctor">
+            <summary>
+            构造函数
+            </summary>
+            <param name="memberService"></param>
+        </member>
+        <member name="T:Demos.WebApi.Controllers.MessageController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Demos.WebApi.Controllers.MessageController.Send(System.String)">
+            <summary>
+            这个是用来发送消息的静态方法
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Demos.WebApi.Controllers.MessageController.Post(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Demos.WebApi.WebApiApplication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Demos.WebApi.WebApiApplication.Application_Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Demos.WebApi.WebApiApplication.Application_Error(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Demos.WebApi.WebApiApplication.SetupResolveRules(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>

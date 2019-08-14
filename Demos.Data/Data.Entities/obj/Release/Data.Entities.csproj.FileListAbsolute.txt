@@ -2,3 +2,10 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Rel
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\bin\Release\Demos.Entities.pdb
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Release\Demos.Entities.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Data\Data.Entities\obj\Release\Demos.Entities.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Release\Demos.Entities.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Release\Demos.Entities.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Release\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Release\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Release\Data.Entities.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Release\Demos.Entities.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Release\Demos.Entities.pdb

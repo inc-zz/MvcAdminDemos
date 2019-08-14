@@ -1,0 +1,12 @@
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\Common.Utility.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\Common.Utility.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\Dapper.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\NPOI.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\NPOI.OOXML.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\Dapper.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\obj\Debug\Common.Utility.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Utility\obj\Debug\Common.Utility.pdb

@@ -8,3 +8,13 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.MongoReposit
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Driver.xml
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Common.MongoRepository.dll.config
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Common.MongoRepository.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Common.MongoRepository.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Bson.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Driver.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Bson.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Driver.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.pdb

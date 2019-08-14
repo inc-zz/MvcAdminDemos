@@ -15,6 +15,8 @@ Jpush极光推送
 
 SqlSugar
 
+hangFire
+nuget安装 执行安装包下对应的脚本
 
 T4语法高亮
 https://blog.csdn.net/yhyhyhy/article/details/52503743

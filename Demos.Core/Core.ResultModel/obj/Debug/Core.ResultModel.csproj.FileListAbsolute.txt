@@ -1,4 +1,0 @@
-C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\bin\Debug\Core.ResultModel.dll
-C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\bin\Debug\Core.ResultModel.pdb
-C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.dll
-C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.pdb

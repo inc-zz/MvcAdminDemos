@@ -5,3 +5,10 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\bin
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\bin\Debug\RabbitMQ.Client.xml
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\Common.RabbitMQ.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\Common.RabbitMQ.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\RabbitMQ.Client.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\RabbitMQ.Client.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.csprojResolveAssemblyReference.cache

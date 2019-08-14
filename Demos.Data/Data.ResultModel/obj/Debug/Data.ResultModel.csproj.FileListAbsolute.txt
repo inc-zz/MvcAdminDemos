@@ -1,0 +1,6 @@
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.ResultModel\bin\Debug\Core.ResultModel.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.ResultModel\bin\Debug\Core.ResultModel.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.ResultModel\bin\Debug\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.ResultModel\bin\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.ResultModel\obj\Debug\Core.ResultModel.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.ResultModel\obj\Debug\Core.ResultModel.pdb

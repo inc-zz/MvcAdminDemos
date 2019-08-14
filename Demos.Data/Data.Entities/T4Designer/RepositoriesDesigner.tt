@@ -1,0 +1,128 @@
+﻿
+<#@ template debug="true" hostspecific="true" language="C#"  #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core"#>
+<#@ import namespace="System"#>
+<#@ import namespace="System.Collections.Generic"#>
+<#@ import namespace="System.IO"#>
+<#@ include file="./EntityHelper.ttinclude"#>
+<#@ include file="./EntityOutputHelper.ttinclude"#>
+<# 
+    var manager = Manager.Create(Host, GenerationEnvironment); 
+    string projectPath = Host.ResolveAssemblyReference("$(ProjectDir)");
+	List<DbTable> tableList= new TemplateHelper().GetDbTables();
+	foreach(var item in tableList)
+	{
+        string entityName= item.TableName.Replace("_","");
+        List<DbColumn> columns =  new TemplateHelper().GetDbColumns(item.TableName,"dbo");
+        var keyModel = columns.FirstOrDefault(x=>x.IsPrimaryKey==true);
+        manager.StartNewFile(projectPath+"/Repositories/I"+entityName+"Repository.designer.cs");
+
+		var newNmae = new TemplateHelper().GetDbCnName(item.TableName);
+
+		if(string.IsNullOrEmpty(newNmae))
+		{
+			newNmae = item.SchemaName;
+		}
+#>
+/*
+*此代码由T4模板自动生成，所有在此基础上的更改将被覆盖，
+*请勿在此文件添加自己的代码
+*生成时间<#=DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") #>
+*/
+using System;
+using System.Linq;
+using System.Web;
+using System.Text;
+using System.Collections.Generic;
+using System.Data; 
+using TZ.Infrastructure;
+using TZ.Models;
+using TZ.Modules.PTS.Extensions;
+using TZ.Modules.PTS.Models;
+using TZ.Modules.PTS.Repositories;
+using TZ.Services;
+using TZ.Validation;
+namespace TZ.Modules.PTS.Repositories
+{
+     /// <summary>
+    ///<#=newNmae #>的接口
+    /// </summary>
+    public partial interface I<#=entityName #>Repository
+    {
+         
+        /// <summary>
+        /// 判断是否存在改记录
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        bool IsExists(<#=columns[0].ColumnType #> <#=columns[0].ColumnName #>);
+        /// <summary>
+        /// 获取实体
+        /// </summary>
+        /// <param name="11">主键</param>
+        /// <returns></returns>
+        <#=entityName #> Get<#=entityName #>(<#=columns[0].ColumnType #> <#=columns[0].ColumnName #>);
+
+        /// <summary>
+        /// 保存信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        <#=entityName #> Save<#=entityName #>(<#=entityName #> model);
+
+        /// <summary>
+        /// 添加信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        <#=entityName #> Add<#=entityName #>(<#=entityName #> model);
+        
+        /// <summary>
+        /// 批量新增
+        /// </summary>
+        /// <param name="addList"></param>
+        /// <returns></returns>
+        bool BatchAdd<#=entityName #>(List<<#=entityName #>> addList);
+
+        /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        bool Remove<#=entityName #>(<#=entityName #> model);
+
+        /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        bool Remove<#=entityName #>(PagingInfo pagingInfo);
+        
+        
+        /// <summary>
+        /// 删除多条信息
+        /// </summary>
+        /// <param name="<#=columns[0].ColumnName #>List">字符串列表</param>
+        /// <returns></returns>
+        bool Remove<#=entityName #>List(string <#=columns[0].ColumnName #>List);
+        
+        /// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        IPageOfItems<<#=entityName #>> Get<#=entityName #>s(PagingInfo pagingInfo);
+        /// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        IPageOfItems<<#=entityName #>> Get<#=entityName #>sList(PagingInfo pagingInfo);
+    }
+}
+<# 
+	} 
+    manager.EndBlock();
+    manager.Process(true); 
+#>

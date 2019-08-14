@@ -1,0 +1,187 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Check</title>
+    <script type="text/javascript" src="~/Resources/Scripts/vue.js"></script>
+    <script type="text/javascript" src="~/Resources/Scripts/axios.min.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <div>
+            <table>
+                <tr>
+                    <td><label>编号：</label></td>
+                    <td><input type="text" v-model="newGoods.id" /></td>
+
+                    <td><label>名称：</label></td>
+                    <td><input type="text" v-model="newGoods.name" /></td>
+
+                    <td><label>类型：</label></td>
+                    <td>
+                        <select v-model="newGoods.type">
+                            <option value="">---ALL---</option>
+                            <option v-for="type in goodsType" v-bind:value="type">{{type}}</option>
+                        </select>
+                    </td>
+
+                    <td><label>售价：</label></td>
+                    <td><input type="text" v-model="newGoods.price" /></td>
+
+                    <td>
+                        <input type="submit" value="查询" v-on:click="GetGoods(newGoods.id)" />
+                        <input type="submit" value="更新" v-on:click="UpdateGoods(newGoods.id,newGoods.name,newGoods.type,newGoods.price)" />
+                        <input type="submit" value="删除" v-on:click="DelectGoods(newGoods.id)" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table v-show="goodsList.length">
+                <tr>
+                    <td>行号</td>
+                    <td>编号</td>
+                    <td>名称</td>
+                    <td>类型</td>
+                    <td>售价</td>
+                </tr>
+                <tr v-for="(item,index) in goodsList">
+                    <td>{{index+1}}</td>
+                    <td>{{item.ID}}</td>
+                    <td>{{item.Name}}</td>
+                    <td>{{item.Type}}</td>
+                    <td>{{item.Price}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: "#demo",
+            data: {
+                goodsType:[],
+                goodsList: [],
+                newGoods: { id: '', name: '', type: '', price: '' }
+            },
+            mounted() {
+                this.GetGoodsType();
+                this.GetAllGoods();
+            },
+            methods:
+            {
+                GetGoodsType: function () {
+                    axios.get("../Goods/GetGoodsType").then(
+                        (response) => {
+                            this.goodsType = [];
+                            for (var i = 0; i < response.data.length; i++) {
+                                this.goodsType.push(response.data[i]);
+                            }
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    )
+                        .catch(function (response) {
+                            console.log(response);
+                        });
+                } ,
+                GetAllGoods: function () {
+                    axios.get('../Goods/GetAllGoods').then(
+                        function (response) {
+                            vm.goodsList = [];
+                            for (var i = 0; i < response.data.length; i++) {
+                                vm.goodsList.push(response.data[i]);
+                            }
+                            //vm.goodsList.splice(response.data.length);
+                        },
+                        function (response) {
+                            alert(response.status);
+                        }
+                    )
+                        .catch(
+                        function (error) {
+                            alert(error);
+                        }
+                        )
+                },
+                GetGoods: function (_id) {
+                    if (_id.length > 0) {
+                        axios.post("../Goods/GetGoods", { id: _id }).then(
+                            (response) => {
+                                this.goodsList = [];
+                                if (response.data.Code == 500) {
+                                    this.goodsList.push(response.data.Entity);
+                                }
+                                else {
+                                    alert(response.data.Message);
+                                }
+
+                            },
+                            (response) => {
+                                alert(response.status);
+                            }
+                        )
+                            .catch(function (response) {
+                                console.log(response);
+                            });
+                    }
+                    else {
+                        this.GetAllGoods();
+                    }
+                },
+                UpdateGoods: function (_id,_name,_type,_price) {
+                    axios.post("../Goods/UpdateGoods", { entity: { ID: _id, Name: _name, Type: _type, Price: _price } }).then(
+                        (response) => {
+                            this.goodsList = [];
+                            if (response.data.Code == 500) {
+                                for (var i = 0; i < response.data.Entity.length; i++) {
+                                    this.goodsList.push(response.data.Entity[i]);
+                                }
+                            }
+                            else {
+                                alert(response.data.Message);
+                            }
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    )
+                        .catch(function (response) {
+                            console.log(response);
+                        });
+                },
+                DelectGoods: function (_id) {
+                    axios.post("../Goods/DelectGoods", { id: _id }).then(
+                        (response) => {
+                            this.goodsList = [];
+                            if (response.data.Code == 500) {
+                                for (var i = 0; i < response.data.Entity.length; i++) {
+                                    this.goodsList.push(response.data.Entity[i]);
+                                }
+                            }
+                            else {
+                                alert(response.data.Message);
+                            }
+
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    )
+                        .catch(function (response) {
+                            console.log(response);
+                        });
+                }
+            },
+
+        });
+    </script>
+</body>
+</html>

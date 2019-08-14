@@ -16,3 +16,12 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\bin
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.csprojResolveAssemblyReference.cache
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\SqlSugar.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\SqlSugar.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\MySql.Data.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\Newtonsoft.Json.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\System.Data.SQLite.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.csprojResolveAssemblyReference.cache

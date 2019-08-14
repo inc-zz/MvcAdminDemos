@@ -1,0 +1,123 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#"  #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core"#>
+<#@ import namespace="System"#>
+<#@ import namespace="System.Collections.Generic"#>
+<#@ import namespace="System.IO"#>
+<#@ include file="./EntityHelper.ttinclude"#>
+<#@ include file="./EntityOutputHelper.ttinclude"#>
+<# 
+    var manager = Manager.Create(Host, GenerationEnvironment);
+	string solutionDir = Host.ResolveAssemblyReference( "$(SolutionDir)" );
+	string savePath = solutionDir+"/Demos.Service/Basic.Service";
+	List<DbTable> tableList= new TemplateHelper().GetDbTables();
+
+	foreach(var item in tableList)
+	{
+        string entityName= item.TableName.Replace("_","");
+        List<DbColumn> columns =  new TemplateHelper().GetDbColumns(item.TableName,"dbo");
+        var keyModel = columns.FirstOrDefault(x=>x.IsPrimaryKey==true);
+        manager.StartNewFile(savePath+"/I"+entityName+"Service.cs");
+
+		var newNmae = new TemplateHelper().GetDbCnName(item.TableName);
+
+		if(string.IsNullOrEmpty(newNmae))
+		{
+			newNmae = item.SchemaName;
+		}
+#>
+
+using System;
+using System.Linq;
+using System.Web;
+using System.Text;
+using System.Collections.Generic;
+using Data.Entities.Models;
+
+namespace Data.Entities.Service
+{
+
+    /// <summary>
+    /// <#=newNmae #>表服务接口
+    /// </summary>
+    public partial interface I<#=entityName #>Service
+    {
+		#region I<#=entityName #>Service Members
+       
+        /// <summary>
+        /// 判断是否存在改记录
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        bool IsExists(<#=keyModel.ColumnType.ToString().Replace("System.","") #> <#=keyModel.ColumnName #>);
+        /// <summary>
+        /// 获取实体
+        /// </summary>
+        /// <param name="<#=keyModel.ColumnName #>">主键</param>
+        /// <returns></returns>
+        <#=entityName #> Get<#=entityName #>(<#=keyModel.ColumnType.ToString().Replace("System.","") #> <#=keyModel.ColumnName #>);
+
+        /// <summary>
+        /// 编辑信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        ModelResult<<#=entityName #>> Save<#=entityName #>(<#=entityName #> model);
+
+        /// <summary>
+        /// 添加信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        ModelResult<<#=entityName #>> Add<#=entityName #>(<#=entityName #> model);
+
+        /// <summary>
+        /// 批量新增
+        /// </summary>
+        /// <param name="addList"></param>
+        /// <returns></returns>
+        bool BatchAdd<#=entityName #>(List<<#=entityName #>> addList);
+
+        /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        bool Remove<#=entityName #>(<#=entityName #> model);
+        
+         /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        bool Remove<#=entityName #>(PagingInfo pagingInfo);
+
+        /// <summary>
+        /// 删除多条信息
+        /// </summary>
+        /// <param name="<#=keyModel.ColumnName #>List">字符串列表</param>
+        /// <returns></returns>
+        bool Remove<#=entityName #>List(string <#=keyModel.ColumnName #>List);
+        /// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        IPageOfItems<<#=entityName #>> Get<#=entityName #>s();
+
+        /// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        IPageOfItems<<#=entityName #>> Get<#=entityName #>sList(PagingInfo pagingInfo);
+
+		#endregion
+
+    }
+}
+<# 
+	} 
+    manager.EndBlock();
+    manager.Process(true); 
+#>

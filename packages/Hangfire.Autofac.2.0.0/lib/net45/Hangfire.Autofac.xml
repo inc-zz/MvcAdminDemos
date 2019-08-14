@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hangfire.Autofac</name>
+    </assembly>
+    <members>
+        <member name="M:Hangfire.AutofacBootstrapperConfigurationExtensions.UseAutofacActivator(Hangfire.IBootstrapperConfiguration,Autofac.ILifetimeScope)">
+            <summary>
+            Tells bootstrapper to use the specified Autofac
+            lifetime scope as a global job activator.
+            </summary>
+            <param name="configuration">Configuration</param>
+            <param name="lifetimeScope">Autofac lifetime scope that will be used to activate jobs</param>
+        </member>
+        <member name="T:Hangfire.AutofacJobActivator">
+            <summary>
+            Hangfire Job Activator based on Autofac IoC Container.
+            </summary>
+        </member>
+        <member name="M:Hangfire.AutofacJobActivator.#ctor(Autofac.ILifetimeScope)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hangfire.AutofacJobActivator"/>
+            class with the given Autofac Lifetime Scope.
+            </summary>
+            <param name="lifetimeScope">Container that will be used to create instance
+            of classes during job activation process.</param>
+        </member>
+        <member name="M:Hangfire.AutofacJobActivator.ActivateJob(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="T:Hangfire.RegistrationExtensions">
+            <summary>
+            Adds registration syntax to the <see cref="T:Autofac.ContainerBuilder"/> type.
+            </summary>
+        </member>
+        <member name="M:Hangfire.RegistrationExtensions.InstancePerBackgroundJob``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})">
+            <summary>
+            Share one instance of the component within the context of a single
+            processing background job instance.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TStyle">Registration style.</typeparam>
+            <param name="registration">The registration to configure.</param>
+            <returns>A registration builder allowing further configuration of the component.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when <paramref name="registration"/> is <see langword="null"/>.
+            </exception>
+        </member>
+    </members>
+</doc>

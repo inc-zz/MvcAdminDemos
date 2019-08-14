@@ -19,7 +19,8 @@
 		{	 
 			List<DbColumn> columns =  new TemplateHelper().GetDbColumns(entity.TableName,entity.SchemaName);
 			var keyModel = columns.FirstOrDefault(x=>x.IsPrimaryKey==true);
-			var entityName = entity.TableName;
+			var entityName = entity.EntityName;
+			var tableName = entity.TableName;
 			manager.StartNewFile(savePath+"/"+entityName + "Repository.cs");#>
 //------------------------------------------------------------------------------
 // 警告:
@@ -30,8 +31,8 @@ using System;
 using Data.Entities.Models;
 using SqlSugar;
 using System.Collections.Generic;
-using Demos.Entities.ResultModel;
-using Demos.Entities.FilterModel;
+using Data.Entities;
+using System.Linq;
 
 namespace Data.Repository.Repository
 {   
@@ -43,87 +44,144 @@ namespace Data.Repository.Repository
         {
             _db = GetInstance();
         }
-		  /// <summary>
+ 
+        /// <summary>
+        /// 判断是否存在改记录
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public bool IsExists(<#=keyModel.ColumnType#> <#=keyModel.ColumnName#>)
+        {
+            return _db.Queryable<<#=entityName#>>().Where(x => x.<#=keyModel.ColumnName#> == <#=keyModel.ColumnName#>) != null;
+
+        }
+
+		/// <summary>
         /// 获取实体
         /// </summary>
-        /// <param name="model"></param>
+        /// <param name="ID">主键</param>
         /// <returns></returns>
-		public <#=entityName#> GetModel(<#=keyModel.ColumnType#> <#=keyModel.ColumnName#>) {
-            return _db.Queryable<<#=entityName#>>().First(x=>x.<#=keyModel.ColumnName#> == <#=keyModel.ColumnName#>);
-
-        }
-        /// <summary>
-        /// 新增
-        /// </summary>
-        /// <param name="model">返回最新实体</param>
-        /// <returns></returns>
-        public <#=entityName#> Insert(<#=entityName#> model)
+        public <#=entityName#> Get<#=entityName#>(<#=keyModel.ColumnType#> <#=keyModel.ColumnName#>)
         {
-            var _model = _db.Insertable(model).ExecuteReturnEntity();
-            return _model;
-        }
-        /// <summary>
-        /// 更新返回最新实体
-        /// </summary>
-        /// <param name="entity"></param>
-        /// <returns></returns>
-        public <#=entityName#> Update(<#=entityName#> entity)
-        {
-            var _entity = entity;
-            var _num = _db.Updateable(entity).ExecuteCommand();
-            if (_num > 0)
-                _entity = _db.Queryable<<#=entityName#>>().Where(x => x.MenuId == entity.MenuId).First();
-            return _entity;
-        }
-        /// <summary>
-        /// 删除
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        public bool Delete(<#=entityName#> model)
-        {
-            var _res = _db.Deleteable<<#=entityName#>>().Where(x => x.MenuId == model.MenuId).ExecuteCommand();
-            return _res > 0;
+            return _db.Queryable<<#=entityName#>>().First(x => x.<#=keyModel.ColumnName#> == <#=keyModel.ColumnName#>);
         }
 
-        /// <summary>
-        /// 分页查询
+          /// <summary>
+        /// 编辑信息
         /// </summary>
-        /// <param name="paging"></param>
-        /// <param name="where"></param>
+        /// <param name="model">实体</param>
         /// <returns></returns>
-        public PagedResult<<#=entityName#>> Pager<#=entityName#>List(PagingInfo paging, string where)
+        public ModelResult<<#=entityName#>> Save<#=entityName#>(<#=entityName#> model)
         {
-			var result = new PagedResult<<#=entityName#>>();
-            int total = 0;
-            result.Data = _db.Queryable<<#=entityName#>>().OrderBy(x => x.<#=keyModel.ColumnName#>).ToPageList(paging.PageIndex, paging.PageSize, ref total);
-            result.PageIndex = paging.PageIndex;
-            result.PageSize = paging.PageSize;
-            result.TotalPages = total;
+            var result = new ModelResult<<#=entityName#>>();
+            var r = _db.Updateable<<#=entityName#>>().Where(x => x.<#=keyModel.ColumnName#> == model.<#=keyModel.ColumnName#>).ExecuteCommand();
+            if (r > 0)
+            {
+                var resModel = _db.Queryable<<#=entityName#>>().InSingle(model.<#=keyModel.ColumnName#>);
+                result.Item = resModel;
+            }
             return result;
-
         }
-        /// <summary>
-        /// 批量插入
+
+       /// <summary>
+        /// 添加信息
         /// </summary>
-        /// <param name="list"></param>
+        /// <param name="model">实体</param>
         /// <returns></returns>
-        public bool BatchInsert(List<<#=entityName#>> list)
+        public ModelResult<<#=entityName#>> Add<#=entityName#>(<#=entityName#> model)
         {
-            var res = _db.Insertable(list.ToArray()).ExecuteCommand();
+            var result = new ModelResult<<#=entityName#>>();
+            var r = _db.Insertable(model).ExecuteCommand();
+            if (r > 0)
+            {
+                var resModel = _db.Queryable<<#=entityName#>>().InSingle(model.<#=keyModel.ColumnName#>);
+                result.Item = resModel;
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 批量新增
+        /// </summary>
+        /// <param name="addList"></param>
+        /// <returns></returns>
+        public bool BatchAdd<#=entityName#>(List<<#=entityName#>> addList)
+        {
+            var res = _db.Insertable(addList.ToArray()).ExecuteCommand();
             return res > 0;
         }
 
-        /// <summary>
-        /// 批量更新
+         /// <summary>
+        /// 删除信息
         /// </summary>
-        /// <param name="list"></param>
+        /// <param name="model">实体</param>
         /// <returns></returns>
-        public bool BatchUpdate(List<<#=entityName#>> list)
+        public bool Remove<#=entityName#>(<#=entityName#> model)
         {
-            var res = _db.Updateable(list.ToArray()).ExecuteCommand();
+            var res = _db.Deleteable<<#=entityName#>>().Where(x => x.<#=keyModel.ColumnName#> == model.<#=keyModel.ColumnName#>).ExecuteCommand();
             return res > 0;
         }
+
+       /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public bool Remove<#=entityName#>(PagingInfo pagingInfo)
+        {
+            var res = _db.Ado.ExecuteCommand("DELETE FROM <#=tableName#> WHERE 1=1 @DelWhere", new
+            {
+                DelWhere = pagingInfo.SqlWhere.ToString()
+            });
+            return res > 0;
+        }
+
+		  /// <summary>
+        /// 删除多条信息
+        /// </summary>
+        /// <param name="IDList">字符串列表</param>
+        /// <returns></returns>
+        public bool Remove<#=entityName#>List(string IDList)
+        {
+            if (string.IsNullOrWhiteSpace(IDList))
+                return false;
+            var newIds = IDList.Split(',');
+            var res = _db.Ado.ExecuteCommand("DELETE FROM <#=tableName#> WHERE <#=keyModel.ColumnName#> IN @DELWhere", new
+            {
+                DelWhere = newIds.ToArray()
+            });
+            return res > 0;
+        }
+
+		/// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        public IPageOfItems<<#=entityName#>> Get<#=entityName#>s()
+        {
+            var list = _db.Queryable<<#=entityName#>>().ToList();
+            var _ienumList = list.AsEnumerable();
+            return new PageOfItems<<#=entityName#>>(_ienumList, 1, list.Count, list.Count);
+
+        }
+
+		/// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        public IPageOfItems<<#=entityName#>> Get<#=entityName#>sList(PagingInfo pagingInfo)
+        {
+            int totalCount = 0;
+
+            var list = _db.Queryable<<#=entityName#>>(pagingInfo.TableName).OrderBy(x => x.<#=keyModel.ColumnName#>).ToPageList(pagingInfo.PageIndex, pagingInfo.PageSize, ref totalCount);
+            var newList = list.AsEnumerable();
+
+            return new PageOfItems<<#=entityName#>>(newList, pagingInfo.PageIndex, pagingInfo.PageSize, totalCount);
+
+        }
+
     }
 }
 	

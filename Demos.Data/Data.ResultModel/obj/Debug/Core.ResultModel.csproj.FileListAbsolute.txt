@@ -1,0 +1,11 @@
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\bin\Debug\Core.ResultModel.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\bin\Debug\Core.ResultModel.pdb
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.dll
+C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\bin\Debug\Core.ResultModel.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\bin\Debug\Core.ResultModel.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\bin\Debug\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\bin\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.ResultModel\obj\Debug\Core.ResultModel.pdb

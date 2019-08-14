@@ -1,0 +1,273 @@
+2019-05-21 08:52:09,150 [Worker #4] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:52:09,190 [28] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:6501160d caught stopping signal...
+2019-05-21 08:52:09,193 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop DelayedJobScheduler:36448920 stopped in 0.0086 ms
+2019-05-21 08:52:09,193 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:cd99d15b stopped in 0.1245 ms
+2019-05-21 08:52:09,193 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:f6adb731 stopped in 2.61 ms
+2019-05-21 08:52:09,193 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:b4ae5ad6 stopped in 0.083 ms
+2019-05-21 08:52:09,196 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d6959700 stopped in 5.7323 ms
+2019-05-21 08:52:09,209 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d40b77fc stopped in 18.4456 ms
+2019-05-21 08:52:09,213 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerWatchdog:bc478d9d stopped in 22.7221 ms
+2019-05-21 08:52:09,201 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d1102a1d stopped in 10.8591 ms
+2019-05-21 08:52:09,206 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:09aa66c0 stopped in 15.3387 ms
+2019-05-21 08:52:09,210 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop CountersAggregator:fd898fd9 stopped in 19.662 ms
+2019-05-21 08:52:09,214 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop RecurringJobScheduler:efec0924 stopped in 23.9823 ms
+2019-05-21 08:52:09,219 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:a60ee07d stopped in 28.835 ms
+2019-05-21 08:52:09,232 [39] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:6501160d caught stopped signal...
+2019-05-21 08:52:09,204 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d65deb40 stopped in 14.1079 ms
+2019-05-21 08:52:09,195 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ExpirationManager:b266d2c1 stopped in 4.916 ms
+2019-05-21 08:52:09,195 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d0d372bc stopped in 5.1939 ms
+2019-05-21 08:52:09,200 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:4b816338 stopped in 9.5456 ms
+2019-05-21 08:52:09,200 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:debfb8e5 stopped in 9.5361 ms
+2019-05-21 08:52:09,195 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:34914c2f stopped in 4.4343 ms
+2019-05-21 08:52:09,213 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:bfd63145 stopped in 22.9898 ms
+2019-05-21 08:52:09,199 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:a64336b4 stopped in 8.7625 ms
+2019-05-21 08:52:09,204 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:b47126a4 stopped in 13.8689 ms
+2019-05-21 08:52:09,208 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:fcf34743 stopped in 18.1922 ms
+2019-05-21 08:52:09,213 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:14c35ac9 stopped in 22.4971 ms
+2019-05-21 08:52:09,217 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerJobCancellationWatcher:f34099cc stopped in 26.7679 ms
+2019-05-21 08:52:09,204 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:4e4c1257 stopped in 14.1324 ms
+2019-05-21 08:52:09,209 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:57963291 stopped in 18.6555 ms
+2019-05-21 08:52:09,247 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:6501160d All dispatchers stopped
+2019-05-21 08:52:09,248 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerHeartbeatProcess:540d745e stopped in 57.7316 ms
+2019-05-21 08:52:09,248 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:6501160d is reporting itself as stopped...
+2019-05-21 08:52:09,251 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:6501160d successfully reported itself as stopped in 2.0602 ms
+2019-05-21 08:52:09,251 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:6501160d has been stopped in total 60.5409 ms
+2019-05-21 08:52:09,251 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop BackgroundServerProcess:e74dfa06 stopped in 83.6342 ms
+2019-05-21 08:53:06,430 [Worker #7] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:53:08,629 [28] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:a95be310 caught stopping signal...
+2019-05-21 08:53:08,633 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop CountersAggregator:9dd9a9b5 stopped in 0.806 ms
+2019-05-21 08:53:08,633 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:8a8c9b7a stopped in 0.6682 ms
+2019-05-21 08:53:08,633 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:3a4fa3f1 stopped in 0.9857 ms
+2019-05-21 08:53:08,633 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:2a79ee98 stopped in 2.989 ms
+2019-05-21 08:53:08,633 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop RecurringJobScheduler:d36a749b stopped in 0.8336 ms
+2019-05-21 08:53:08,666 [64] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:a95be310 caught stopped signal...
+2019-05-21 08:53:08,645 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:6e02a27d stopped in 14.5526 ms
+2019-05-21 08:53:08,649 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:473ef87d stopped in 18.8805 ms
+2019-05-21 08:53:08,654 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:cce1d087 stopped in 23.1959 ms
+2019-05-21 08:53:08,636 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ExpirationManager:ed0dce6c stopped in 5.4133 ms
+2019-05-21 08:53:08,640 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:54159d85 stopped in 9.7906 ms
+2019-05-21 08:53:08,645 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:652af08e stopped in 14.351 ms
+2019-05-21 08:53:08,649 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:75b73527 stopped in 18.7484 ms
+2019-05-21 08:53:08,640 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:8feac4b8 stopped in 9.9039 ms
+2019-05-21 08:53:08,636 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:fe053765 stopped in 5.5647 ms
+2019-05-21 08:53:08,654 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:194cf705 stopped in 23.0785 ms
+2019-05-21 08:53:08,636 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop DelayedJobScheduler:7d960b32 stopped in 5.3483 ms
+2019-05-21 08:53:08,658 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d69eada5 stopped in 27.5328 ms
+2019-05-21 08:53:08,644 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerJobCancellationWatcher:c21b4e03 stopped in 13.3033 ms
+2019-05-21 08:53:08,640 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:5fc7ad7f stopped in 9.7313 ms
+2019-05-21 08:53:08,652 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:e41c7924 stopped in 21.9885 ms
+2019-05-21 08:53:08,657 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:210bee23 stopped in 26.6275 ms
+2019-05-21 08:53:08,649 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:10fa9300 stopped in 18.922 ms
+2019-05-21 08:53:08,654 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:902624f2 stopped in 23.2295 ms
+2019-05-21 08:53:08,645 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:a2cb9963 stopped in 14.5998 ms
+2019-05-21 08:53:08,648 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:afa276f7 stopped in 17.6671 ms
+2019-05-21 08:53:08,659 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerWatchdog:b593c021 stopped in 28.3982 ms
+2019-05-21 08:53:08,675 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:a95be310 All dispatchers stopped
+2019-05-21 08:53:08,677 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerHeartbeatProcess:f2808fff stopped in 46.0736 ms
+2019-05-21 08:53:08,680 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:a95be310 is reporting itself as stopped...
+2019-05-21 08:53:08,683 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:a95be310 successfully reported itself as stopped in 2.832 ms
+2019-05-21 08:53:08,683 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:a95be310 has been stopped in total 52.7509 ms
+2019-05-21 08:53:08,684 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop BackgroundServerProcess:6e3eed53 stopped in 53.1055 ms
+2019-05-21 08:54:06,373 [Worker #7] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:54:10,880 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:10,881 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:15,882 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:15,883 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:20,884 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:20,885 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:20,886 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:54:20,887 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:54:25,885 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:25,886 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:30,886 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:30,886 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:35,887 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:35,888 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:40,889 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:40,889 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:45,890 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:45,891 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:50,889 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:54:50,890 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:54:50,891 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:50,891 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:54:55,892 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:54:55,893 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:00,893 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:00,894 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:05,894 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:05,894 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:06,336 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler [(null)] <(null)> - 1 recurring job(s) enqueued.
+2019-05-21 08:55:06,348 [Worker #7] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:55:10,895 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:10,895 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:15,896 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:15,897 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:20,892 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:55:20,893 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:55:20,897 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:20,897 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:25,898 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:25,898 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:30,899 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:30,899 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:35,900 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:35,900 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:40,901 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:40,901 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:45,902 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:45,903 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:50,895 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:55:50,896 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:55:50,903 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:50,903 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:55:55,904 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:55:55,905 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:00,905 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:00,906 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:05,906 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:05,906 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:06,397 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler [(null)] <(null)> - 1 recurring job(s) enqueued.
+2019-05-21 08:56:06,411 [Worker #5] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:56:10,907 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:10,907 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:15,908 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:15,908 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:20,898 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:56:20,899 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:56:20,909 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:20,910 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:25,910 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:25,911 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:30,911 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:30,912 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:35,913 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:35,914 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:40,915 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:40,915 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:45,916 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:45,917 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:50,901 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:56:50,902 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:56:50,917 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:50,917 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:56:55,918 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:56:55,919 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:00,919 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:00,920 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:05,920 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:05,921 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:06,448 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler [(null)] <(null)> - 1 recurring job(s) enqueued.
+2019-05-21 08:57:06,467 [Worker #5] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:57:10,921 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:10,921 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:15,922 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:15,922 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:20,904 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:57:20,905 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:57:20,923 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:20,923 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:25,924 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:25,925 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:30,925 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:30,926 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:35,927 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:35,928 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:40,929 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:40,930 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:45,930 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:45,931 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:50,907 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:57:50,908 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:57:50,932 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:50,933 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:57:55,933 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:57:55,933 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:00,934 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:00,935 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:05,936 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:05,936 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:06,504 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler [(null)] <(null)> - 1 recurring job(s) enqueued.
+2019-05-21 08:58:06,516 [Worker #5] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:58:10,937 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:10,938 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:15,938 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:15,939 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:20,892 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator [(null)] <(null)> - Aggregating records in 'Counter' table...
+2019-05-21 08:58:20,920 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:58:20,921 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:58:20,921 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator [(null)] <(null)> - Records from the 'Counter' table aggregated.
+2019-05-21 08:58:20,940 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:20,941 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:25,942 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:25,943 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:30,944 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:30,945 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:35,945 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:35,946 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:40,946 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:40,947 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:45,947 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:45,947 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:50,923 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:58:50,925 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:58:50,948 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:50,949 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:58:55,949 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:58:55,950 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:00,950 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:00,951 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:05,951 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:05,952 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:06,556 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler [(null)] <(null)> - 1 recurring job(s) enqueued.
+2019-05-21 08:59:06,573 [Worker #5] INFO  Common.Logging.Log [(null)] <(null)> -  System.RuntimeMethodHandle.InvokeMethod: 每分钟执行任务
+2019-05-21 08:59:10,953 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:10,953 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:15,954 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:15,955 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:20,927 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 heartbeat successfully sent
+2019-05-21 08:59:20,927 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 waiting for 00:00:30 delay before sending a heartbeat
+2019-05-21 08:59:20,955 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:20,955 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:25,956 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:25,957 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:30,957 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:30,957 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:35,958 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:35,959 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:40,960 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - Checking for aborted jobs...
+2019-05-21 08:59:40,961 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher [(null)] <(null)> - No newly aborted jobs found.
+2019-05-21 08:59:45,574 [94] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 caught stopping signal...
+2019-05-21 08:59:45,575 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop DelayedJobScheduler:5d21ffbb stopped in 0.5689 ms
+2019-05-21 08:59:45,575 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:10d5473d stopped in 0.8955 ms
+2019-05-21 08:59:45,576 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:6f92e660 stopped in 1.0023 ms
+2019-05-21 08:59:45,576 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerJobCancellationWatcher:23f0c371 stopped in 1.1594 ms
+2019-05-21 08:59:45,582 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:2d908112 stopped in 7.8198 ms
+2019-05-21 08:59:45,587 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:1c2e9390 stopped in 12.2968 ms
+2019-05-21 08:59:45,601 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop RecurringJobScheduler:9d90ad85 stopped in 26.0709 ms
+2019-05-21 08:59:45,591 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:56a4ec91 stopped in 16.6699 ms
+2019-05-21 08:59:45,596 [65] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 caught stopped signal...
+2019-05-21 08:59:45,619 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ExpirationManager:7cb63bd9 stopped in 44.3195 ms
+2019-05-21 08:59:45,578 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:4d27d7c6 stopped in 3.4987 ms
+2019-05-21 08:59:45,592 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:e5974a82 stopped in 16.9875 ms
+2019-05-21 08:59:45,596 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:c6b94c94 stopped in 21.3134 ms
+2019-05-21 08:59:45,594 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:13a18bc3 stopped in 19.8738 ms
+2019-05-21 08:59:45,605 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:d11b7a72 stopped in 30.0613 ms
+2019-05-21 08:59:45,609 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:7dd45791 stopped in 34.4197 ms
+2019-05-21 08:59:45,622 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:7a5fce06 stopped in 47.1096 ms
+2019-05-21 08:59:45,613 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:db368c6b stopped in 38.7465 ms
+2019-05-21 08:59:45,578 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:8e71b842 stopped in 3.7615 ms
+2019-05-21 08:59:45,627 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:49293078 stopped in 52.3481 ms
+2019-05-21 08:59:45,605 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:06d95fa2 stopped in 30.0843 ms
+2019-05-21 08:59:45,609 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:794baae5 stopped in 34.4994 ms
+2019-05-21 08:59:45,613 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop CountersAggregator:ddb5c50b stopped in 38.8295 ms
+2019-05-21 08:59:45,582 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerWatchdog:9afd505c stopped in 7.8458 ms
+2019-05-21 08:59:45,587 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:dc13dfe1 stopped in 12.606 ms
+2019-05-21 08:59:45,578 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:2077e6ab stopped in 3.5746 ms
+2019-05-21 08:59:45,583 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop Worker:fd1f7281 stopped in 8.0859 ms
+2019-05-21 08:59:45,642 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 All dispatchers stopped
+2019-05-21 08:59:45,643 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop ServerHeartbeatProcess:21b742bf stopped in 68.2932 ms
+2019-05-21 08:59:45,646 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 is reporting itself as stopped...
+2019-05-21 08:59:45,650 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 successfully reported itself as stopped in 3.4134 ms
+2019-05-21 08:59:45,651 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess [(null)] <(null)> - Server itb-zlj:11664:c8ced052 has been stopped in total 75.8098 ms
+2019-05-21 08:59:45,651 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution [(null)] <(null)> - Execution loop BackgroundServerProcess:034d2fc1 stopped in 80.0407 ms

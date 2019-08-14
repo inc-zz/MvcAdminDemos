@@ -1,0 +1,307 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#"  #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core"#>
+<#@ import namespace="System"#>
+<#@ import namespace="System.Collections.Generic"#>
+<#@ import namespace="System.IO"#>
+<#@ import namespace="System.Linq"#>
+<#@ include file="./EntityHelper.ttinclude"#>
+<#@ include file="./EntityOutputHelper.ttinclude"#>
+<# 
+
+    string solutionsPath = Host.ResolveAssemblyReference("$(SolutionDir)");
+	string projectPath = Host.ResolveAssemblyReference("$(ProjectDir)");
+    var manager = Manager.Create(Host,GenerationEnvironment);
+	List<DbTable> tableList= new TemplateHelper().GetDbTables();
+	foreach(var item in tableList)
+	{
+        string entityName= item.TableName.Replace("_","");
+        List<DbColumn> columns =  new TemplateHelper().GetDbColumns(item.TableName,"dbo");
+        var keyModel = columns.FirstOrDefault(x=>x.IsPrimaryKey==true);
+        List<string> columnNameList= columns.Select(x=>x.ColumnName).ToList();
+        string columnStr= string.Join(",",columnNameList);
+        manager.StartNewFile(projectPath+"/Repositories/SqlServer/SqlServer"+entityName+"Repository.designer.cs");
+
+#> 
+/*
+*此代码由T4模板自动生成，所有在此基础上的更改将被覆盖，
+*请勿在此文件添加自己的代码
+*生成时间<#=DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") #>
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using TZ.Infrastructure;
+using TZ.Extensions;
+using TZ.Models;
+using TZ.Modules.PTS.Models;
+using System.Data;
+using System.Text;
+using TZ.Repositories.SqlServer;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using AutoMapper;
+using TZ.ModulesPTS.Core;
+using System.Configuration;
+namespace TZ.Modules.PTS.Repositories.SqlServer
+{
+    public partial class SqlServer<#=entityName #>Repository : I<#=entityName #>Repository
+    {
+        
+        #region I<#=entityName #>Repository Members
+        TZDataContext _TZDataContext;
+        public SqlServer<#=entityName #>Repository(PTSDataContext _PTSDataContext)
+        {
+            this._TZDataContext = _PTSDataContext.GetDataContext();
+        }
+        
+        /// <summary>
+        /// 判断是否存在改记录
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public bool IsExists(<#=keyModel.ColumnType.ToString().Replace("System.","") #> <#=keyModel.ColumnName #>)
+        {
+            string strSql = String.Format("SELECT COUNT(1) FROM <#=item.TableName #> WHERE <#=keyModel.ColumnName #>='{0}'", <#=keyModel.ColumnName #>);
+            return _TZDataContext.Exists(strSql);
+        }
+
+        /// <summary>
+        /// 获取实体
+        /// </summary>
+        /// <param name="ID">主键</param>
+        /// <returns></returns>
+        public <#=entityName #> Get<#=entityName #>(<#=keyModel.ColumnType.ToString().Replace("System.","") #> <#=keyModel.ColumnName #>)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(" SELECT  TOP 1  ");
+            strSql.Append(" <#=columnStr #>");
+            strSql.Append(" FROM <#=item.TableName #> ");
+            strSql.Append(" WHERE <#=keyModel.ColumnName #>='" + <#=keyModel.ColumnName #> + "' ");
+            DataSet ds = _TZDataContext.Query(strSql.ToString());
+            <#=entityName #> _<#=entityName #>;
+            if (ds.Tables.Count != 0)
+            {
+                _<#=entityName #> = new <#=entityName #>();
+                foreach (DataRow myView in ds.Tables[0].Rows)
+                {
+                 <#
+                    foreach(var column in columns) {
+            if(column.IsNullable && column.ColumnType.ToString()!="System.String"){#>
+                  _<#= entityName #>.<#=column.ColumnName #> = myView.Field<Nullable<<#=column.ColumnType.ToString().Replace("System.","") #>>>("<#=column.ColumnName #>");
+            <#}else{#> 
+                 _<#= entityName #>.<#=column.ColumnName #> = myView.Field<<#=column.ColumnType.ToString().Replace("System.","") #>>("<#=column.ColumnName #>");
+              <#}
+            }#>             
+                }
+                return _<#=entityName #>;
+            }
+            return null;
+        }
+                
+        /// <summary>
+        /// 保存信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public <#=entityName #> Save<#=entityName #>(<#=entityName #> model)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("UPDATE <#=item.TableName #> SET ");
+            
+            <#foreach(var column in columns) {
+                    if(!column.IsNullable){
+                        if(column.ColumnType.ToString() == "System.String"){#>           
+                            strSql.Append("<#=column.ColumnName #>='" + model.<#=column.ColumnName #>.SafeSqlLiteral(2) + "',");
+                        <#}else{#>
+                            strSql.Append("<#=column.ColumnName #>='" + model.<#=column.ColumnName #> + "',");
+                        <#}
+                    }else{#>
+                       if(model.<#=column.ColumnName #> != null){
+                         <#if(column.ColumnType.ToString() == "System.String"){#>           
+                            strSql.Append("<#=column.ColumnName #>='" + model.<#=column.ColumnName #>.SafeSqlLiteral(2) + "',");
+                        <#}else{#>
+                            strSql.Append("<#=column.ColumnName #>='" + model.<#=column.ColumnName #> + "',");
+                        <#}#>
+                       }else{
+                            strSql.Append("<#=column.ColumnName #>=null,");
+                        }
+                   <# }
+            }#>
+            int n = strSql.ToString().LastIndexOf(",");
+            strSql.Remove(n, 1);
+            strSql.Append(" WHERE <#=keyModel.ColumnName #>='" + model.<#=keyModel.ColumnName #> + "' ");
+            int count = _TZDataContext.ExecuteSql(strSql.ToString());
+            return count > 0 ? model : null;
+
+        }
+
+        /// <summary>
+        /// 添加信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public <#=entityName #> Add<#=entityName #>(<#=entityName #> model)
+        {
+            StringBuilder strSql1 = new StringBuilder();
+            StringBuilder strSql2 = new StringBuilder();
+            StringBuilder strSql3 = new StringBuilder();
+            <#foreach(var column in columns) {
+                    if(!column.IsNullable){#>
+                         strSql2.Append("<#=column.ColumnName #>,");
+                         strSql3.Append("'" + model.<#=column.ColumnName #> + "',");     
+                    <# }else{
+                        if(column.IsNullable){#>
+                            if(model.<#=column.ColumnName #> != null){
+                                strSql2.Append("<#=column.ColumnName #>,");
+                                strSql3.Append("'" + model.<#=column.ColumnName #> + "',");
+                            }
+                       <# }else{#>
+                            strSql2.Append("<#=column.ColumnName #>,");
+                            strSql3.Append("'" + model.<#=column.ColumnName #> + "',");                   
+                        <#}
+                    }
+            }#>      
+            strSql1.Append("INSERT INTO <#=item.TableName #>(");
+            strSql1.Append(strSql2.ToString().Remove(strSql2.Length - 1));
+            strSql1.Append(")");
+            strSql1.Append(" VALUES (");
+            strSql1.Append(strSql3.ToString().Remove(strSql3.Length - 1));
+            strSql1.Append(")");
+            int count = _TZDataContext.ExecuteSql(strSql1.ToString());
+            return count > 0 ? model : null;
+        }
+
+        /// <summary>
+        /// 批量新增
+        /// </summary>
+        /// <param name="addList"></param>
+        /// <returns></returns>
+        public bool BatchAdd<#=entityName #>(List<<#=entityName #>> addList)
+        {
+            using (SqlConnection conn = new SqlConnection(_TZDataContext.connectionString))
+            {
+                conn.Open();
+                SqlTransaction sqlTran = conn.BeginTransaction(); // 开始事务
+                try
+                {
+                    if (addList.Count > 0)
+                    {
+                        SqlBulkCopy bulkCopy = new SqlBulkCopy(conn, SqlBulkCopyOptions.Default, sqlTran);
+                        Stopwatch sw = new Stopwatch();
+                        DataTable dt = JsonCommon.ListToDataTable<<#=entityName #>>(addList);
+                        bulkCopy.DestinationTableName = "<#=item.TableName #>";
+                        bulkCopy.BatchSize = dt.Rows.Count;
+                        sw.Start();
+                        <#foreach(var column in columns){ #>
+                            bulkCopy.ColumnMappings.Add("<#=column.ColumnName #>", "<#=column.ColumnName #>");
+                        <#} #>
+                        if (dt.Rows.Count > 0)
+                        {
+                            bulkCopy.WriteToServer(dt);
+                            sw.Stop();
+                        }
+                        sqlTran.Commit();
+                    }
+                }
+                catch (Exception)
+                {
+                    sqlTran.Rollback();
+                    throw;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public bool Remove<#=entityName #>(<#=entityName #> model)
+        {
+            string strSql = String.Format("DELETE FROM <#=item.TableName #> WHERE <#=keyModel.ColumnName #>='{0}'", model.<#=keyModel.ColumnName #>);
+            int count = _TZDataContext.ExecuteSql(strSql.ToString());
+            return count > 0 ? true : false;
+        }
+        
+        /// <summary>
+        /// 根据PaginInfo删除信息
+        /// </summary>
+        /// <param name="model">实体</param>
+        /// <returns></returns>
+        public bool Remove<#=entityName #>(PagingInfo pagingInfo)
+        {
+            string strSql = String.Format("DELETE FROM <#=item.TableName #> WHERE {0}", pagingInfo.SqlWhere.ToString());
+            int count = _TZDataContext.ExecuteSql(strSql.ToString());
+            return count > 0 ? true : false;
+        }
+        
+        /// <summary>
+        /// 删除多条信息
+        /// </summary>
+        /// <param name="IDList">字符串列表</param>
+        /// <returns></returns>
+        public bool Remove<#=entityName #>List(string <#=keyModel.ColumnName #>List)
+        {
+            StringBuilder strSql=new StringBuilder();
+            string[] _InfoKeyList = <#=keyModel.ColumnName #>List.Split(',');
+            for (int i = 0; i < _InfoKeyList.Length; i++)
+            {
+               strSql.AppendFormat("DELETE FROM <#=item.TableName #>  WHERE <#=keyModel.ColumnName #>='{0}';", _InfoKeyList[i]);
+                
+            }
+            int count = _TZDataContext.ExecuteSql(strSql.ToString());
+            return count == _InfoKeyList.Length ? true : false;
+        }
+        /// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        public IPageOfItems<<#=entityName #>> Get<#=entityName #>s(PagingInfo pagingInfo)
+        {
+            return Get<#=entityName #>sList(pagingInfo);
+
+        }
+
+        /// <summary>
+        /// 获取分页信息
+        /// </summary>
+        /// <param name="pagingInfo">Index:第几条开始,Size:获取几条</param>
+        /// <returns></returns>
+        public IPageOfItems<<#=entityName #>> Get<#=entityName #>sList(PagingInfo pagingInfo)
+        {
+            if (string.IsNullOrEmpty(pagingInfo.TableName))
+            {
+               pagingInfo.TableName = "<#=item.TableName #>";
+            }
+            if (pagingInfo.OrderByList.Count == 0)
+            {
+                pagingInfo.OrderByList.Add("<#=keyModel.ColumnName #>", "DESC");
+            }
+            DataSet ds = _TZDataContext.GetList(pagingInfo);
+            DataView view = ds.Tables[0].AsDataView();
+            IEnumerable<<#=entityName #>> _<#=entityName #>IEnumerable 
+            = from myView in view.Table.AsEnumerable()
+                select new <#=entityName #>
+                {
+                <#foreach(var column in columns){ #>
+            <#if(column.IsNullable && column.ColumnType.ToString()!="System.String"){#> 
+                <#=column.ColumnName #> = myView.Field<Nullable<<#=column.ColumnType.ToString().Replace("System.","") #>>>("<#=column.ColumnName #>"),
+             <#}else{ #>
+                <#=column.ColumnName #> = myView.Field<<#=column.ColumnType.ToString().Replace("System.","") #>>("<#=column.ColumnName #>"),
+                <#} }#>
+                };
+            return new PageOfItems<<#=entityName #>>(_<#=entityName #>IEnumerable, pagingInfo.PageIndex, pagingInfo.PageSize, Int32.Parse(ds.Tables[1].Rows[0][0].ToString()));
+        }
+        #endregion
+    }
+}
+
+<# 
+	} 
+    manager.EndBlock();
+    manager.Process(true); 
+#>

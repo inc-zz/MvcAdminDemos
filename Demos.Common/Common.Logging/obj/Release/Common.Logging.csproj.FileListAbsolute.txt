@@ -5,3 +5,10 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\bin\
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\obj\Release\Common.Log.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\obj\Release\Common.Log.pdb
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\obj\Release\Common.Logging.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Release\Common.Log.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Release\Common.Log.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Release\log4net.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Release\log4net.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Release\Common.Logging.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Release\Common.Log.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Release\Common.Log.pdb

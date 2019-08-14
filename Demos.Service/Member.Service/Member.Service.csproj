@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMemberService.cs" />
-    <Compile Include="MemberService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Demos.Common\Common.Logging\Common.Logging.csproj">
+      <Project>{1A8E3432-8565-45E7-B7CA-4B9301E2DE43}</Project>
+      <Name>Common.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Demos.Common\Common.SqlSugar\SqlSugar.csproj">
+      <Project>{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}</Project>
+      <Name>SqlSugar</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Demos.Data\Data.Entities\Data.Entities.csproj">
       <Project>{81330315-DB73-440D-AB78-A2FBD56E1052}</Project>
       <Name>Data.Entities</Name>
@@ -52,6 +59,10 @@
     <ProjectReference Include="..\..\Demos.Data\Data.Repository\Data.Repository.csproj">
       <Project>{AD635690-F5F4-47BF-9402-E68601E03F6D}</Project>
       <Name>Data.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Basic.Service\Basic.Service.csproj">
+      <Project>{fec68f8a-05f6-419f-b838-a8dccbbd6b88}</Project>
+      <Name>Basic.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

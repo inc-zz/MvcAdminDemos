@@ -5,3 +5,10 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\bin\
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\bin\Debug\log4net.xml
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\obj\Debug\Common.Log.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Common\Common.Logging\obj\Debug\Common.Log.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\Common.Log.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\Common.Log.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\log4net.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\log4net.xml
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Log.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Log.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Logging.csprojResolveAssemblyReference.cache

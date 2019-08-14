@@ -7,3 +7,13 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Basic.Service\bin\
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Basic.Service\obj\Release\Basic.Service.csprojResolveAssemblyReference.cache
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Basic.Service\obj\Release\PQM.Service.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Service\Basic.Service\obj\Release\PQM.Service.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\PQM.Service.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\PQM.Service.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\Demos.Entities.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\Newtonsoft.Json.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\bin\Release\Demos.Entities.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\obj\Release\Basic.Service.csprojResolveAssemblyReference.cache
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\obj\Release\PQM.Service.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Service\Basic.Service\obj\Release\PQM.Service.pdb

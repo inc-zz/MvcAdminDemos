@@ -10,3 +10,8 @@ C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.EnumType\bin\Deb
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.EnumType\obj\Debug\Core.EnumType.csprojResolveAssemblyReference.cache
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.EnumType\obj\Debug\Core.EnumType.dll
 C:\workspace\csharp\CsharpAdminDemo\Demos.Admin\Demos.Core\Core.EnumType\obj\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.EnumType\bin\Debug\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.EnumType\bin\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.EnumType\obj\Debug\Core.EnumType.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.EnumType\obj\Debug\Core.EnumType.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.EnumType\obj\Debug\Core.EnumType.csprojResolveAssemblyReference.cache

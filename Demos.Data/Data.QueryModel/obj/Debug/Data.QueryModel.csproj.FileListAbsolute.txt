@@ -1,0 +1,4 @@
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.QueryModel\bin\Debug\Core.QueryModel.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.QueryModel\bin\Debug\Core.QueryModel.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.QueryModel\obj\Debug\Core.QueryModel.dll
+D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.QueryModel\obj\Debug\Core.QueryModel.pdb

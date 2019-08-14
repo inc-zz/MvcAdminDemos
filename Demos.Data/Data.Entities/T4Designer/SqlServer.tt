@@ -1,0 +1,55 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#"  #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core"#>
+<#@ import namespace="System"#>
+<#@ import namespace="System.Collections.Generic"#>
+<#@ import namespace="System.IO"#>
+<#@ import namespace="System.Linq"#>
+<#@ include file="./EntityHelper.ttinclude"#>
+<#@ include file="./EntityOutputHelper.ttinclude"#>
+<# 
+
+    string solutionsPath = Host.ResolveAssemblyReference("$(SolutionDir)");
+	string projectPath = Host.ResolveAssemblyReference("$(ProjectDir)");
+    var manager = Manager.Create(Host,GenerationEnvironment);
+	List<DbTable> tableList= new TemplateHelper().GetDbTables();
+	foreach(var item in tableList)
+	{
+        string entityName= item.TableName.Replace("_","");
+        List<DbColumn> columns =  new TemplateHelper().GetDbColumns(item.TableName,"dbo");
+        var keyModel = columns.FirstOrDefault(x=>x.IsPrimaryKey==true);
+        List<string> columnNameList= columns.Select(x=>x.ColumnName).ToList();
+        string columnStr= string.Join(",",columnNameList);
+        manager.StartNewFile(projectPath+"/Repositories/SqlServer/SqlServer"+entityName+"Repository.cs");
+
+#> 
+/*
+*此代码由T4模板自动生成，所有在此基础上的更改将被覆盖，
+*请勿在此文件添加自己的代码
+*生成时间<#=DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") #>
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using TZ.Infrastructure;
+using TZ.Extensions;
+using TZ.Models;
+using TZ.Modules.PTS.Models;
+using System.Data;
+using System.Text;
+using TZ.Repositories.SqlServer;
+namespace TZ.Modules.PTS.Repositories.SqlServer
+{
+    public partial class SqlServer<#=entityName #>Repository : I<#=entityName #>Repository
+    {
+        
+       
+    }
+}
+
+<# 
+	} 
+    manager.EndBlock();
+    manager.Process(true); 
+#>

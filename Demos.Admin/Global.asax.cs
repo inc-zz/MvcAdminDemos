@@ -1,15 +1,16 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using Basic.Service;
 using Common.Logging;
+using Data.Repository.Repository;
 using System;
 using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Member.Service;
-using Data.Repository;
-using Data.Repository.Repository;
+
+
 
 namespace Demos.Admin
 {
@@ -44,20 +45,19 @@ namespace Demos.Admin
             {
             }
         }
-
-        private void SetupResolveRules(ContainerBuilder builder) {
+        private void SetupResolveRules(ContainerBuilder builder)
+        {
 
             #region 数据仓库
-            builder.RegisterType<MenuInfoRepository>().As<IMenuInfoRepository>().InstancePerLifetimeScope();
+            builder.RegisterType<PubCodesRepository>().As<IPubCodesRepository>().InstancePerLifetimeScope();
 
             #endregion
 
 
             #region 服务
-            builder.RegisterType<MemberService>().As<IMemberService>().InstancePerLifetimeScope();
+            //builder.RegisterType<BasicDataService>().As<IBasicDataService>().InstancePerLifetimeScope();
 
             #endregion
-
         }
     }
 }

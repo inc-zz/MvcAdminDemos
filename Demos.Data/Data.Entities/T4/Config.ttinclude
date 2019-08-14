@@ -2,9 +2,10 @@
 <#+
     //配置文件
     public class config {
-        public static readonly string ConnectionString = "Data Source=.;Initial Catalog=admin_model;User Id=sa;Password=123;";
-        public static readonly string DbDatabase = "admin_model";
-        public static readonly string DbTables = "*";
+        public static readonly string ConnectionString = "Data Source=192.168.1.137;Initial Catalog=TZWL_PTS2_dev_v2;User Id=sa;Password=123456;";
+        public static readonly string DbDatabase = "TZWL_PTS2_dev_v2";
+        public static readonly string DbTables = "PubCodes";
     }
 
  #>
+
