@@ -376,7 +376,6 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\Microsoft.AspNet.SignalR.SystemWeb
 D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\Basic.Service.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\Basic.Service.pdb
 D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\Common.Utility.dll
-D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\TZ.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\Dapper.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\NPOI.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Admin\bin\NPOI.OOXML.dll

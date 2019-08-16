@@ -42,9 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\ETPSAPTIHEADINPUT.cs" />
     <Compile Include="Models\PubCodes.cs" />
-    <Compile Include="Models\TRANSAPPLYHEADINPUT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultModel\Basic\IPageOfItems.cs" />
     <Compile Include="ResultModel\Basic\ModelResult.cs" />

@@ -49,11 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseService.cs" />
-    <Compile Include="IETPSAPTIHEADINPUTService.cs" />
-    <Compile Include="IPubCodesService.cs" />
-    <Compile Include="ITRANSAPPLYHEADINPUTService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TRANSAPPLYHEADINPUTService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Demos.Core\Core.EnumType\Core.EnumType.csproj">

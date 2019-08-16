@@ -2,7 +2,6 @@
 using Autofac.Integration.Mvc;
 using Basic.Service;
 using Common.Logging;
-using Data.Repository.Repository;
 using System;
 using System.Reflection;
 using System.Web;
@@ -49,7 +48,7 @@ namespace Demos.Admin
         {
 
             #region 数据仓库
-            builder.RegisterType<PubCodesRepository>().As<IPubCodesRepository>().InstancePerLifetimeScope();
+            //builder.RegisterType<PubCodesRepository>().As<IPubCodesRepository>().InstancePerLifetimeScope();
 
             #endregion
 

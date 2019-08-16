@@ -45,18 +45,15 @@
     <Compile Include="BaseRepository.cs" />
     <Compile Include="Extensions\IUserManager.cs" />
     <Compile Include="Extensions\UserManager.cs" />
-    <Compile Include="IRepository\IETPSAPTIHEADINPUTRepository.cs" />
-    <Compile Include="IRepository\IPubCodesRepository.cs" />
-    <Compile Include="IRepository\ITRANSAPPLYHEADINPUTRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\ETPSAPTIHEADINPUTRepository.cs" />
-    <Compile Include="Repository\PubCodesRepository.cs" />
-    <Compile Include="Repository\TRANSAPPLYHEADINPUTRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="IRepository\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Demos.Common\Common.Logging\Common.Logging.csproj">
       <Project>{1A8E3432-8565-45E7-B7CA-4B9301E2DE43}</Project>
