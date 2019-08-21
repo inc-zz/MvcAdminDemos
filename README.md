@@ -5,7 +5,8 @@
   代码结构图
   
   A_Common
-    Common.Cache              --基础缓存类
+  
+    Common.Cache              --基础缓存类 
     Common.Logging            --日志 
     Common.MongoRepository    --Mongo封装类
     Common.RabbitMQ           --消息队列基础类
@@ -13,7 +14,6 @@
   B_Core 
   
     Core.EnumType             --枚举，常量
-    
     Core.Utility              --底层核心
     
   C_Data
