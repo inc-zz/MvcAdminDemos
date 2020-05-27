@@ -48,7 +48,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.MongoEntities", "Demos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlSugar", "Demos.Common\Common.SqlSugar\SqlSugar.csproj", "{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTS2.WebApi", "Demos.WebApi\Demos.WebApi\PTS2.WebApi.csproj", "{BFFEC334-56DE-4AD0-A99B-1EE7E49AD975}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.WebApi", "Demos.WebApi\Demos.WebApi\Demos.WebApi.csproj", "{BFFEC334-56DE-4AD0-A99B-1EE7E49AD975}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Utility", "Demos.Core\Core.Utility\Core.Utility.csproj", "{0877F0E1-DE31-42AC-9DA6-74D8F108A0F5}"
 EndProject

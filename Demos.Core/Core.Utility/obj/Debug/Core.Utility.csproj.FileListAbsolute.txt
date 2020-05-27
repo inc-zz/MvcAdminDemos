@@ -10,3 +10,4 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.Utility\bin\Debug\Dapper.xml
 D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.Utility\bin\Debug\ICSharpCode.SharpZipLib.xml
 D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.Utility\obj\Debug\Common.Utility.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.Utility\obj\Debug\Common.Utility.pdb
+D:\Demos\csharp\MvcAdminDemos\Demos.Core\Core.Utility\obj\Debug\Core.Utility.csprojResolveAssemblyReference.cache
