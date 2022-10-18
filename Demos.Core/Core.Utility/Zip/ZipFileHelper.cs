@@ -6,8 +6,11 @@ using ICSharpCode.SharpZipLib.Zip;
 using System.IO;
 using ICSharpCode.SharpZipLib.Checksum;
 
-namespace Core.Utility
+namespace Core.Utility.Zip
 {
+    /// <summary>
+    /// 文件操作类-压缩、解压
+    /// </summary>
     public class ZipFileHelper
     {
         private static int avg = 1024 * 1024 * 100;//100MB写一次  

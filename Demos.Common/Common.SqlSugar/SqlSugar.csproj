@@ -76,7 +76,6 @@
     <Compile Include="Abstract\DeleteProvider\DeleteableProvider.cs" />
     <Compile Include="CacheScheme\CacheKeyBuider.cs" />
     <Compile Include="CacheScheme\CacheSchemeMain.cs" />
-    <Compile Include="SqlSugarDao.cs" />
     <Compile Include="Entities\CacheKey.cs" />
     <Compile Include="Entities\ConditionalModel.cs" />
     <Compile Include="Entities\ConnMoreSettings.cs" />

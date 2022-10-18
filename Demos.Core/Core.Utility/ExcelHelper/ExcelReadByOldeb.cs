@@ -7,8 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Utility
+namespace Core.Utility.ExcelHelper
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class ExcelReadByOldeb
     {
 

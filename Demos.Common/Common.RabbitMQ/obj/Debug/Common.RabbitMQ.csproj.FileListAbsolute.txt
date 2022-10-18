@@ -12,3 +12,12 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\RabbitMQ.Cl
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.pdb
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.csprojResolveAssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\Common.RabbitMQ.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\Common.RabbitMQ.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\RabbitMQ.Client.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\bin\Debug\RabbitMQ.Client.xml
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.csproj.CopyComplete
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.RabbitMQ\obj\Debug\Common.RabbitMQ.pdb

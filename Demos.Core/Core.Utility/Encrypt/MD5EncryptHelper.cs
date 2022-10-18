@@ -5,8 +5,12 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Utility
+namespace Core.Utility.Encrypt
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     public static class MD5EncryptHelper
     {
 
@@ -43,7 +47,6 @@ namespace Core.Utility
             }
             return pwd;
         }
-
 
         /// <summary>
         /// 32位MD5加密
@@ -87,7 +90,6 @@ namespace Core.Utility
             }
             return pwd;
         }
-
 
         /// <summary>
         /// 32位MD5加密

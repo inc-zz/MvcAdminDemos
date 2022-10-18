@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Utility
+namespace Core.Utility.Dapper
 {
     public class ConnectionConfig
     {
-        public static string ConnectionString = "";//ConfigurationManager.ConnectionStrings["ConnString"].ConnectionString;
+        public static string ConnectionString = "";
         public static string GetConn()
         {
             return ConnectionString;
@@ -42,8 +42,10 @@ namespace Core.Utility
         /// <summary>
         /// 执行SQL返回集合
         /// </summary>
-        /// <param name="strSql">SQL语句</param>
-        /// <param name="obj">参数model</param>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="strSql"></param>
+        /// <param name="param"></param>
+        /// <param name="con"></param>
         /// <returns></returns>
         public static List<T> Query<T>(string strSql, object param, string con = "")
         {
@@ -56,8 +58,10 @@ namespace Core.Utility
         /// <summary>
         /// 执行SQL返回一个对象
         /// </summary>
-        /// <param name="strSql">SQL语句</param>
-        /// <param name="obj">参数model</param>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="strSql"></param>
+        /// <param name="param"></param>
+        /// <param name="con"></param>
         /// <returns></returns>
         public static T QueryFirst<T>(string strSql, object param, string con = "")
         {
@@ -70,7 +74,9 @@ namespace Core.Utility
         /// <summary>
         /// 执行SQL返回单个对象
         /// </summary>
-        /// <param name="strSql">SQL语句</param>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="strSql"></param>
+        /// <param name="con"></param>
         /// <returns></returns>
         public static T QuerySingle<T>(string strSql, string con = "")
         {
@@ -80,6 +86,14 @@ namespace Core.Utility
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="strSql"></param>
+        /// <param name="param"></param>
+        /// <param name="con"></param>
+        /// <returns></returns>
         public static T QuerySingle<T>(string strSql, object param, string con = "")
         {
             using (IDbConnection conn = new SqlConnection(string.IsNullOrEmpty(con) ? ConnectionString : con))
@@ -245,7 +259,12 @@ namespace Core.Utility
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="strProcedure"></param>
+        /// <param name="param"></param>
+        /// <returns></returns>
         public static bool ExecuteStoredProcedure(string strProcedure, DynamicParameters param)
         {
             using (IDbConnection conn = new SqlConnection(ConnectionString))
@@ -290,7 +309,11 @@ namespace Core.Utility
                 return conn.Query<T>(strProcedure, param, null, true, null, CommandType.StoredProcedure).ToList();
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="strSql"></param>
+        /// <returns></returns>
         public static DataTable Query(string strSql)
         {
             using (IDbConnection conn = new SqlConnection(ConnectionString))
@@ -310,7 +333,13 @@ namespace Core.Utility
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="strSql"></param>
+        /// <param name="param"></param>
+        /// <param name="con"></param>
+        /// <returns></returns>
         public static DataTable Query(string strSql, object param, string con = "")
         {
             using (IDbConnection conn = new SqlConnection(string.IsNullOrEmpty(con) ? ConnectionString : con))
@@ -330,7 +359,13 @@ namespace Core.Utility
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="strSql"></param>
+        /// <param name="param"></param>
+        /// <param name="dts"></param>
+        /// <returns></returns>
         public static DataSet Query(string strSql, object param, DataTable[] dts)
         {
             using (IDbConnection conn = new SqlConnection(ConnectionString))

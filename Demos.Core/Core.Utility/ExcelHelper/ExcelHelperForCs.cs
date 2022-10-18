@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NPOI.XSSF.UserModel;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 
-namespace Core.Utility
+namespace Core.Utility.ExcelHelper
 {
     public class ExcelHelperForCs
     {
@@ -48,6 +45,11 @@ namespace Core.Utility
                 throw ex;
             }
         }
+        /// <summary>
+        /// DataTable数据集合写入到Excel
+        /// </summary>
+        /// <param name="ds"></param>
+        /// <returns></returns>
         public static MemoryStream DataTableToExcel(DataSet ds)
         {
             try
@@ -67,6 +69,11 @@ namespace Core.Utility
                 throw ex;
             }
         }
+        /// <summary>
+        /// DataTable数据集合写入到Excel(2003以上版本)
+        /// </summary>
+        /// <param name="ds"></param>
+        /// <returns></returns>
         public static MemoryStream DataTableToExcel_Xlsx(DataSet ds)
         {
             try
@@ -87,6 +94,12 @@ namespace Core.Utility
             }
         }
 
+        /// <summary>
+        /// 读取Excel数据写入DataTable（从指定列开始读）
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="isFirstRowColumn"></param>
+        /// <returns></returns>
         public static DataTable GetFromExcel(string filePath, bool isFirstRowColumn = true)
         {
             try
@@ -151,7 +164,13 @@ namespace Core.Utility
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// 读取Excel数据写入DataTable(指定页签指定列)
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="sheetIndex"></param>
+        /// <param name="isFirstRowColumn"></param>
+        /// <returns></returns>
         public static DataTable GetFromExcel(string filePath, int sheetIndex, bool isFirstRowColumn = true)
         {
             try
@@ -216,7 +235,12 @@ namespace Core.Utility
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stream"></param>
+        /// <param name="isFirstRowColumn"></param>
+        /// <returns></returns>
         public static DataTable GetFromExcel(Stream stream, bool isFirstRowColumn = true)
         {
             try

@@ -7,3 +7,9 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.MongoEntities\bin\Debug\Data.Mongo
 D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.pdb
 D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.csprojResolveAssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Data\Data.MongoEntities\bin\Debug\Data.MongoEntities.dll
+F:\github\MvcAdminDemos\Demos.Data\Data.MongoEntities\bin\Debug\Data.MongoEntities.pdb
+F:\github\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.dll
+F:\github\MvcAdminDemos\Demos.Data\Data.MongoEntities\obj\Debug\Data.MongoEntities.pdb

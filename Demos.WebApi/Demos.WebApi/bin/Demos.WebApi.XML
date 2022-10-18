@@ -4,6 +4,17 @@
         <name>Demos.WebApi</name>
     </assembly>
     <members>
+        <member name="T:Demos.WebApi.FilterConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Demos.WebApi.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            
+            </summary>
+            <param name="filters"></param>
+        </member>
         <member name="T:Demos.WebApi.Startup">
             <summary>
             

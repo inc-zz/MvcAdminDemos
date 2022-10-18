@@ -12,3 +12,12 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\log4net.xml
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Log.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Log.pdb
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Logging.csprojResolveAssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\Common.Log.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\Common.Log.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\log4net.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\bin\Debug\log4net.xml
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Logging.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Logging.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Logging.csproj.CopyComplete
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Log.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Logging\obj\Debug\Common.Log.pdb

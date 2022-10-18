@@ -25,3 +25,14 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\System.Data
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.pdb
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.csprojResolveAssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\SqlSugar.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\SqlSugar.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\MySql.Data.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\Newtonsoft.Json.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\bin\Debug\System.Data.SQLite.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.csproj.CopyComplete
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.SqlSugar\obj\Debug\SqlSugar.pdb

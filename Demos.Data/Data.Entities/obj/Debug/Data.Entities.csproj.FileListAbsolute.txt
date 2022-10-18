@@ -12,3 +12,12 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.p
 D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csprojResolveAssemblyReference.cache
 D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.pdb
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Demos.Entities.dll
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Demos.Entities.pdb
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.dll
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\bin\Debug\Core.EnumType.pdb
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Data.Entities.csproj.CopyComplete
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.dll
+F:\github\MvcAdminDemos\Demos.Data\Data.Entities\obj\Debug\Demos.Entities.pdb

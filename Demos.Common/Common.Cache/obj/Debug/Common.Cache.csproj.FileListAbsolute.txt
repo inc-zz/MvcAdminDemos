@@ -13,3 +13,13 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Cache\bin\Debug\StackExchange.
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.csprojResolveAssemblyReference.cache
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\bin\Debug\Common.Cache.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\bin\Debug\Common.Cache.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\bin\Debug\Newtonsoft.Json.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\bin\Debug\StackExchange.Redis.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\bin\Debug\StackExchange.Redis.xml
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.csproj.CopyComplete
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.Cache\obj\Debug\Common.Cache.pdb

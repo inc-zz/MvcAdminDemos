@@ -18,3 +18,15 @@ D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Mong
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.csprojResolveAssemblyReference.cache
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.dll
 D:\Demos\csharp\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Common.MongoRepository.dll.config
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Common.MongoRepository.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\Common.MongoRepository.pdb
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Bson.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Driver.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Bson.xml
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\bin\Debug\MongoDB.Driver.xml
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.csproj.AssemblyReference.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.csproj.CoreCompileInputs.cache
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.csproj.CopyComplete
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.dll
+F:\github\MvcAdminDemos\Demos.Common\Common.MongoRepository\obj\Debug\Common.MongoRepository.pdb
